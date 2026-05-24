@@ -4,23 +4,23 @@
 
 This repository now includes a small native iPhone app scaffold at:
 
-`SoundButtonApp/`
+`SayAThingApp/`
 
 ### Project structure
 
-- `SoundButtonApp/SoundButtonApp.xcodeproj`
-  - Xcode project and shared scheme (`SoundButtonApp`)
-- `SoundButtonApp/SoundButtonApp/SoundButtonApp.swift`
+- `SayAThingApp/SayAThingApp.xcodeproj`
+  - Xcode project and shared scheme (`SayAThingApp`)
+- `SayAThingApp/SayAThingApp/SayAThingApp.swift`
   - App entry point
-- `SoundButtonApp/SoundButtonApp/ContentView.swift`
+- `SayAThingApp/SayAThingApp/ContentView.swift`
   - UI: title, instruction text, and one large `Play Sound` button
-- `SoundButtonApp/SoundButtonApp/AudioPlayerService.swift`
+- `SayAThingApp/SayAThingApp/AudioPlayerService.swift`
   - Uses `AVAudioPlayer` (`AVFoundation`) to load/play bundled `sound.mp3` or `sound.wav`
   - Prints a helpful debug message when no bundled sound file is found
   - Repeated taps replay from the beginning
-- `SoundButtonApp/SoundButtonApp/sound.wav`
+- `SayAThingApp/SayAThingApp/sound.wav`
   - Tiny placeholder sample sound (replaceable)
-- `SoundButtonApp/docs/ui-screenshot.png`
+- `SayAThingApp/docs/ui-screenshot.png`
   - UI preview screenshot
 
 ## Sound file instructions
@@ -32,14 +32,14 @@ The app searches the main bundle in this order:
 
 To replace audio:
 
-1. In Xcode, open `SoundButtonApp.xcodeproj`
-2. Replace `SoundButtonApp/SoundButtonApp/sound.wav` **or** add `sound.mp3`
-3. Ensure the file is included in the `SoundButtonApp` target resources
+1. In Xcode, open `SayAThingApp.xcodeproj`
+2. Replace `SayAThingApp/SayAThingApp/sound.wav` **or** add `sound.mp3`
+3. Ensure the file is included in the `SayAThingApp` target resources
 
 ## Build and run in Xcode
 
-1. Open `SoundButtonApp/SoundButtonApp.xcodeproj`
-2. Select the `SoundButtonApp` scheme
+1. Open `SayAThingApp/SayAThingApp.xcodeproj`
+2. Select the `SayAThingApp` scheme
 3. Choose an iPhone Simulator (or device)
 4. Press **Run**
 5. Tap **Play Sound** in the app

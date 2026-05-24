@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct SoundButtonApp: App {
+struct SayAThingApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
