@@ -4,7 +4,7 @@
 
 This repository now includes a small native iPhone app scaffold at:
 
-`/home/runner/work/say-a-thing/say-a-thing/SoundButtonApp`
+`SoundButtonApp/`
 
 ### Project structure
 

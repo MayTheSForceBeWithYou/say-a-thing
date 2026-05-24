@@ -1,6 +1,7 @@
 import AVFoundation
 import Foundation
 
+@MainActor
 final class AudioPlayerService {
     private var audioPlayer: AVAudioPlayer?
 
