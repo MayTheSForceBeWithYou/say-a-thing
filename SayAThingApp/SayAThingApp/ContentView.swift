@@ -5,15 +5,21 @@ struct ContentView: View {
 
     var body: some View {
         VStack(spacing: 24) {
-            Text("Sound Button")
+            Image("CatFace")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200, height: 200)
+                .clipShape(RoundedRectangle(cornerRadius: 16))
+
+            Text("What's That??")
                 .font(.largeTitle)
                 .fontWeight(.bold)
 
-            Text("Tap the button to play the bundled sound.")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-                .multilineTextAlignment(.center)
-                .padding(.horizontal)
+//            Text("Tap the button to play the bundled sound.")
+//                .font(.subheadline)
+//                .foregroundStyle(.secondary)
+//                .multilineTextAlignment(.center)
+//                .padding(.horizontal)
 
             Button {
                 audioPlayerService.playSound()
